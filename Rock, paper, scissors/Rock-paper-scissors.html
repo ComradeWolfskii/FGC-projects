@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <script>
+    function Intro(){
+        console.log("Let's play rock, paper, scissors!")
+        alert("Let's play rock, paper, scissors!")
+    }
+    
+    Intro();
+    
+    var input = prompt("Insert your choice");
+    console.log(`you have chosen ${input}`)
+    var player_choice = input
+   
+    var bot_rng = Math.floor(Math.random() * 3)
+    var bot_choice = ''
+
+    switch (bot_rng) {
+        case 0: 
+            bot_choice = 'rock'
+            alert(bot_choice)
+            if (input.match('paper')) {
+                console.log('You Won!')
+                alert('You Won!')
+            } else if (input.match('scissors')) {
+                console.log('You Lost!')
+                alert('You Lost')
+            } else {
+                alert("Tie")
+            }
+            break;
+        case 1:
+            bot_choice = 'paper'
+            alert(bot_choice)
+            if (input.match('scissors')) {
+                console.log('You Won!')
+                alert('You Won!')
+            } else if (input.match('rock')) {
+                console.log('You Lost!')
+                alert('You Lost')
+            } else {
+                alert("Tie")
+            }
+            break;
+        case 2:
+            bot_choice = 'scissors'
+            alert(bot_choice)
+            if (input.match('rock')) {
+                console.log('You Won!')
+                alert('You Won!')
+            } else if (input.match('paper')) {
+                console.log('You Lost!')
+                alert('You Lost')
+            } else {
+                alert("Tie")
+            }
+            break;
+        default:
+            console.log('error number doesnt match case statements')
+            break;
+    }
+    console.log(bot_choice)
+
+
+
+
+
+    </script>
+    
+</head>
+<body>
+
+</body>
