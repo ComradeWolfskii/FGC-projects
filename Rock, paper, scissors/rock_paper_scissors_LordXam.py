@@ -16,9 +16,9 @@ while i == 1:
    print("you lose")
    choice = input("try again?\n")
   elif choice == "gun":
-    i -= 1
     print(">AAAAH!")
     print("...\nyou win")
+    i -= 1
   else:
     print("...\nthats not an option!")
     choice = input("try again?\n")
